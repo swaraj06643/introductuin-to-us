@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <img src="logo.jpeg.png" height="110px" width="110px"> 
+    <header>
+        <h1>WELCOME TO VISION TECH 2.O! 🚀</h1>
+        <h2>Our Mission is to:</h2>
+        <p>Empowering Innovation, Driving Change.</p>
+    </header>
+    <div class="parallax"></div>
+
+    <section class="team">
+        <h2>Meet My Team 👥</h2>
+        <div class="team-carousel">
+            <div class="team-member">
+                <h3>Subhasish - Team Leader</h3>
+                <p>Visionary strategist with 1+ years of experience in project management & web dev</p>
+            </div>
+            <div class="team-member">
+                <h3>Suman - Developer</h3>
+                <p>Code wizard with a knack for problem-solving and innovation.</p>
+            </div>
+            <div class="team-member">
+                <h3>Subhankar - Communicator</h3>
+                <p>Creative mind behind our visual identity and user experience.</p>
+            </div>
+            <div class="team-member">
+                <h3>Shreyansh - Marketing Specialist</h3>
+                <p>Expert in digital marketing and brand storytelling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="goals">
+        <h2>Our Goals 🎯</h2>
+        <ul>
+            <li>Innovation: Foster a culture of creativity and experimentation.</li>
+            <li>Collaboration: Build strong partnerships within our industry and beyond.</li>
+            <li>Sustainability: Implement practices that benefit our community and the environment.</li>
+            <li>Growth: Invest in our team’s development and future capabilities.</li>
+        </ul>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Be a Explorer ! 🤝</h2>
+        <button onclick="window.location.href='https://swaraj06643.github.io/research/'">Join Us!</button>
+    </section>
+
+    <section class="social-media">
+        <h2>Stay Connected 📬</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/thefalco_punch?igsh=aWdxNmh2dGpqMG13">Instagram</a>
+
+            <a href="www.linkedin.com/in/subhasish-rath-926b902a4">LinkedIn</a>
+
+            <a href="https://x.com/SubhasishR7735">Twitter</a>
+
+            <a href="https://wa.me/7735248493">Whatsapp</a>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <h2>Feedback & Suggestions 💬</h2>
+        <form id="feedback-form">
+            <textarea placeholder="Your thoughts or questions" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Why Choose Us? 🌟</h2>
+        <ul>
+            <li>Dynamic Environment: We thrive on diversity and creativity.</li>
+            <li>Impactful Projects: Every member's contribution matters.</li>
+            <li>Continuous Learning: We prioritize personal and professional growth.</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const feedback = this.querySelector('textarea').value; // Get the feedback from the textarea
+            console.log('Feedback submitted:', feedback); // Log it to the console (or handle it as needed)
+            this.reset(); // Reset the form
+            alert('i am feeling good for your feedback!'); // Show a thank you message
+        });
+    </script>
+</body>
+</html>
