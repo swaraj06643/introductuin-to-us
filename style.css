@@ -1,0 +1,134 @@
+body {
+    font-family: Bold italic, ;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10;
+    background-color: #c35959;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f37878;
+    color: rgb(11, 13, 34);
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #0a0217; /* Darker shade on hover */
+}
+
+h1, h2 {
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.parallax {
+    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+    height: 400px; /* Adjust the height as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team {
+    padding: 20px;
+    background-color: rgb(191, 255, 94);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(26, 1, 1);
+    transition: transform 0.3s ease;
+}
+
+.team:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.team-carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.team-member:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.goals, .call-to-action, .social-media, .feedback {
+    padding: 20px;
+    background-color: rgb(77, 174, 135);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(222, 1, 1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.goals:hover, .call-to-action:hover, .social-media:hover, .feedback:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    background-color: rgb(67, 154, 115); /* Darker shade on hover */
+}
+
+.call-to-action button {
+    background-color: #061ce1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Enlarge button on hover */
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.feedback textarea:focus {
+    border-color: #061ce1; /* Change border color on focus */
+}
+
+footer {
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
